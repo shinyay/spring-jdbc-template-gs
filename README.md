@@ -3,6 +3,7 @@
 Database Access using Spring JDBC Template
 
 ## Description
+Spring provides a template class called `JdbcTemplate` that makes it easy to work with SQL relational databases and JDBC.
 
 ## Demo
 
