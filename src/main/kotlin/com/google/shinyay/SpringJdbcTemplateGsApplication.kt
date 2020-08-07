@@ -22,6 +22,10 @@ class SpringJdbcTemplateGsApplication(val jdbcTemplate: JdbcTemplate) : CommandL
 						last_name VARCHAR(255));
 		""".trimIndent())
 
+		jdbcTemplate.execute("INSERT INTO children(first_name, last_name) VALUES ('Rei','Ayanami')")
+		jdbcTemplate.execute("INSERT INTO children(first_name, last_name) VALUES ('Shinji','Ikari')")
+		jdbcTemplate.execute("INSERT INTO children(first_name, last_name) VALUES ('Asuka','Soryu')")
+
 	}
 }
 
