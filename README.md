@@ -8,6 +8,11 @@ Spring provides a template class called `JdbcTemplate` that makes it easy to wor
 ### CommandLineRunner
 This Application class implements Spring Boot’s `CommandLineRunner`, which means it will execute the run() method after the application context is loaded.
 
+### JdbcTemplate Function
+- execute
+- batchUpdae
+- query / queryForXXX
+
 ## Demo
 
 ## Features
