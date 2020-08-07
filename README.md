@@ -1,6 +1,6 @@
-# Name
+# Spring Jdbc Template Getting Started
 
-Overview
+Database Access using Spring JDBC Template
 
 ## Description
 
