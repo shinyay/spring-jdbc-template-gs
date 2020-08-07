@@ -28,8 +28,14 @@ class SpringJdbcTemplateGsApplication(val jdbcTemplate: JdbcTemplate) : CommandL
 
 		jdbcTemplate.query<Any>(
 				"SELECT id, first_name, last_name FROM children WHERE first_name = ?", arrayOf<Any>("Rei")
-		) { rs: ResultSet, rowNum: Int -> Child(rs.getLong("id"), rs.getString("first_name"), rs.getString("last_name")) }.forEach(Consumer { child: Any -> logger.info(child.toString()) })
-
+		) {
+			rs: ResultSet, rowNum: Int -> Child(
+				rs.getLong("id"),
+				rs.getString("first_name"),
+				rs.getString("last_name")
+		) }.forEach(
+				Consumer { child: Any -> logger.info(child.toString()) }
+		)
 	}
 }
 
