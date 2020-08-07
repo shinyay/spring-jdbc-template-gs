@@ -26,6 +26,10 @@ class SpringJdbcTemplateGsApplication(val jdbcTemplate: JdbcTemplate) : CommandL
 		jdbcTemplate.execute("INSERT INTO children(first_name, last_name) VALUES ('Shinji','Ikari')")
 		jdbcTemplate.execute("INSERT INTO children(first_name, last_name) VALUES ('Asuka','Soryu')")
 
+		jdbcTemplate.query<Any>(
+				"SELECT id, first_name, last_name FROM children WHERE first_name = ?", arrayOf<Any>("Rei")
+		) { rs: ResultSet, rowNum: Int -> Child(rs.getLong("id"), rs.getString("first_name"), rs.getString("last_name")) }.forEach(Consumer { child: Any -> logger.info(child.toString()) })
+
 	}
 }
 
