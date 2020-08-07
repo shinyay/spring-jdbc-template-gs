@@ -5,6 +5,9 @@ Database Access using Spring JDBC Template
 ## Description
 Spring provides a template class called `JdbcTemplate` that makes it easy to work with SQL relational databases and JDBC.
 
+### CommandLineRunner
+This Application class implements Spring Boot’s `CommandLineRunner`, which means it will execute the run() method after the application context is loaded.
+
 ## Demo
 
 ## Features
