@@ -14,6 +14,17 @@ This Application class implements Spring Boot’s `CommandLineRunner`, which mea
 - batchUpdate
 - query / queryForXXX
 
+### Configuration MySQL
+- spring:
+  - datasource:
+    - url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/appdb?allowPublicKeyRetrieval=true&useSSL=false
+    - username: root
+    - password: root
+    - driver-class-name: com.mysql.cj.jdbc.Driver
+    - schema: classpath:database/schema.sql
+    - data: classpath:database/data.sql
+    - initialization-mode: always
+
 ## Demo
 ### Run MySQL Container
 ```shell script
