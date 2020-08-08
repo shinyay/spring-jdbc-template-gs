@@ -20,7 +20,10 @@ This Application class implements Spring Boot’s `CommandLineRunner`, which mea
 $ docker container run --rm --name mysqldb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=appdb -d mysql
 ```
 
-
+### Run Spring Application
+```shell script
+$ ./gradlew clean bootRun
+```
 
 ## Features
 
