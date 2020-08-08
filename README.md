@@ -28,6 +28,7 @@ This Application class implements Spring Boot’s `CommandLineRunner`, which mea
       - since 8.x : `com.mysql.cj.jdbc.Driver`
       - before 8.x: `com.mysql.jdbc.Driver`
     - schema: classpath:database/schema.sql
+      - Path for Schema file at initialization
     - data: classpath:database/data.sql
     - initialization-mode: always
 
