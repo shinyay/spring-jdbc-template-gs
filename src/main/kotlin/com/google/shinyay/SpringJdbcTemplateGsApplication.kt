@@ -14,9 +14,8 @@ import java.util.function.Consumer
 class SpringJdbcTemplateGsApplication(val jdbcTemplate: JdbcTemplate) : CommandLineRunner {
 	override fun run(vararg args: String?) {
 		logger.info("Creating Tables...")
-		jdbcTemplate.execute("DROP TABLE children IF EXISTS")
 		jdbcTemplate.execute("""
-					CREATE TABLE children(
+					CREATE TABLE IF NOT EXISTS children(
 						id SERIAL,
 						first_name VARCHAR(255),
 						last_name VARCHAR(255));
