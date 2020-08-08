@@ -15,11 +15,17 @@ This Application class implements Spring Boot’s `CommandLineRunner`, which mea
 - query / queryForXXX
 
 ## Demo
+### Run MySQL Container
+```shell script
+$ docker container run --rm --name mysqldb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=appdb -d mysql
+```
+
+
 
 ## Features
 
-- feature:1
-- feature:2
+- CommandLineRunner
+- JdbcTemplate
 
 ## Requirement
 
