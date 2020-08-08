@@ -30,6 +30,7 @@ This Application class implements Spring Boot’s `CommandLineRunner`, which mea
     - schema: classpath:database/schema.sql
       - Path for Schema file at initialization
     - data: classpath:database/data.sql
+      - Path for Data file at initialization
     - initialization-mode: always
 
 ## Demo
