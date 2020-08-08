@@ -6,3 +6,6 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
+    schema: classpath:database/schema.sql
+    data: classpath:database/data.sql
+    initialization-mode: always
