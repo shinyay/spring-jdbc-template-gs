@@ -11,7 +11,7 @@ This Application class implements Spring Boot’s `CommandLineRunner`, which mea
 ### JdbcTemplate Function
 - execute
 - update
-- batchUpdae
+- batchUpdate
 - query / queryForXXX
 
 ## Demo
