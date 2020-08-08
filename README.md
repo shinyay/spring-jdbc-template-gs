@@ -51,7 +51,12 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 ```
 
-
+#### Quert Data
+```shell script
+mysql> use appdb
+mysql> show tables;
+mysql> select * from children;
+```
 
 ## Features
 
