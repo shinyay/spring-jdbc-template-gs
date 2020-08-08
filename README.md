@@ -20,6 +20,7 @@ This Application class implements Spring Boot’s `CommandLineRunner`, which mea
     - url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/appdb?allowPublicKeyRetrieval=true&useSSL=false
       - Connection String to MySQL DB
     - username: root
+      - Access User to MySQL
     - password: root
     - driver-class-name: com.mysql.cj.jdbc.Driver
     - schema: classpath:database/schema.sql
