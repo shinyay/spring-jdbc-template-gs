@@ -32,6 +32,10 @@ This Application class implements Spring Boot’s `CommandLineRunner`, which mea
     - data: classpath:database/data.sql
       - Path for Data file at initialization
     - initialization-mode: always
+      - Initialize the datasource with available DDL and DML scripts
+      - always
+      - embedded (In the case of Embedded DB)
+      - never
 
 ## Demo
 ### Run MySQL Container
