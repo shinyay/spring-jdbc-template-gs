@@ -22,6 +22,7 @@ This Application class implements Spring Boot’s `CommandLineRunner`, which mea
     - username: root
       - Access User to MySQL
     - password: root
+      - Access Password
     - driver-class-name: com.mysql.cj.jdbc.Driver
     - schema: classpath:database/schema.sql
     - data: classpath:database/data.sql
